@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hOME</title>
+</head>
+<body>
+    <h1>The Home Page</h1>
+    <form method="post" action="/">
+        <input type="text" name="user[name]">
+        <input type="text" name="user[email]">
+        <input type="submit" value="Submit">
+    </form>
+    <p>Ignore this form, it was just a way for me to test posting</p>
+    <p>Here's my progress so far</p>
+    <hr>
+    <p>So i deployed this app with express and deployed it to heroku</p>
+    <p>The app only has one route '/' which serves a home.ejs file</p>
+    <p>I'm still playing with the app, but right now the home.ejs does nothing</p>
+    <p>I created an alert in trading view and gave it <a href="https://chris-moralis-express.herokuapp.com">https://chris-moralis-express.herokuapp.com</a> as the webhook url</p>
+    <p><img src="https://i.imgur.com/aCnRt8C.png"></p>
+    <p>In my index.js (server file) there is an app.post route to listen for this data</p>
+    <p>Currently, when the app is running, I can run <pre>heroku logs --tail</pre> and wait for TradingView to send data from an alert.</p>
+    <p>But i'm not really using Moralis for this process. Surely I can use a moralis function to listen to the arrival of this post request and then consume the data in the cloud function?</p>
+</body>
+</html>
